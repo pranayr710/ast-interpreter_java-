@@ -1,0 +1,61 @@
+digraph G {
+node0 [label = "Program (Sample)", color = "black"]
+node0 -> node4
+node4 [label = "Method (main)", color = "black"]
+subgraph cluster_node4 {
+node4 -> node5
+node5 [label = "Block", color = "black"]
+node5 -> node10
+node10 [label = "Assignment", color = "black"]
+node10 -> node7
+node7 [label = "Designator (Kind: Static)", color = "black"]
+node7 -> node6
+node6 [label = "Var (x)", color = "black"]
+node10 -> node9
+node9 [label = "IntCon (10)", color = "black"]
+node5 -> node15
+node15 [label = "Assignment", color = "black"]
+node15 -> node12
+node12 [label = "Designator (Kind: Static)", color = "black"]
+node12 -> node11
+node11 [label = "Var (c)", color = "black"]
+node15 -> node14
+node14 [label = "CharCon ('A')", color = "black"]
+node5 -> node19
+node19 [label = "IntPrint (width = 0)", color = "black"]
+node19 -> node18
+node18 [label = "Designator (Kind: Static)", color = "black"]
+node18 -> node17
+node17 [label = "Var (x)", color = "black"]
+node5 -> node23
+node23 [label = "CharPrint (width = 0)", color = "black"]
+node23 -> node22
+node22 [label = "Designator (Kind: Static)", color = "black"]
+node22 -> node21
+node21 [label = "Var (c)", color = "black"]
+node5 -> node39
+node39 [label = "ElseIf", color = "black"]
+node39 -> node34
+node34 [label = "If", color = "black"]
+node34 -> node29
+node29 [label = "BinExpr (>)", color = "black"]
+node29 -> node26
+node26 [label = "Designator (Kind: Static)", color = "black"]
+node26 -> node25
+node25 [label = "Var (x)", color = "black"]
+node29 -> node28
+node28 [label = "IntCon (5)", color = "black"]
+node34 -> node30
+node30 [label = "Block", color = "black"]
+node30 -> node33
+node33 [label = "IntPrint (width = 0)", color = "black"]
+node33 -> node32
+node32 [label = "IntCon (1)", color = "black"]
+node39 -> node35
+node35 [label = "Block", color = "black"]
+node35 -> node38
+node38 [label = "IntPrint (width = 0)", color = "black"]
+node38 -> node37
+node37 [label = "IntCon (0)", color = "black"]
+}
+}

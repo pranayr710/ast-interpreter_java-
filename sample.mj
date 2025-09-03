@@ -1,0 +1,17 @@
+// Sample MicroJava program
+program Sample
+int x;
+char c;
+{
+    void main() {
+        x = 10;
+        c = 'A';
+        print(x);
+        print(c);
+        if (x > 5) {
+            print(1);
+        } else {
+            print(0);
+        }
+    }
+}
